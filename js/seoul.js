@@ -10,17 +10,6 @@ $(document).ready(function () {
         }
     });
 
-//Javascript
-//최초 로드 시 iframe 높이값 비율에 맞게 세팅
-var $videoIframe = document.getElementById('video');
-var responsiveHeight = $videoIframe.offsetWidth * 0.5625;
-$videoIframe.setAttribute('height', responsiveHeight);
-
-//브라우저 리사이즈 시 iframe 높이값 비율에 맞게 세팅
-window.addEventListener('resize', function(){
-    responsiveHeight = $videoIframe.offsetWidth * 0.5625;
-    $videoIframe.setAttribute('height', responsiveHeight);
-});
 
 // vegas slide
 $(function(){
@@ -45,14 +34,6 @@ $(function(){
     })
 })
 
-
-
-
-
-    // //????? 
-    // $("nav .snb ul li a").hover(function () {
-    //     $("nav .snb ul li a").addClass("on");
-    // })
 
 
     $(".roundstep").hover(function(){
@@ -98,28 +79,6 @@ $(function(){
 
 });
 
-// $("div .roundtxt p.button").hover(function(){
-//     $("div .roundtxt p.button").addclass('on')
-
-// })
-
-
-// var swiper = new Swiper(".mySwiper.event", {
-//     direction: "vertical",
-//     slidesPerColumn: 2,
-//     spaceBetween: 0,
-//     mousewheel: true,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//   });
-
-
-
-
-
-
 
 
 // sec01 pagination 마을 소개 섹션 스슬
@@ -134,60 +93,21 @@ var swiper = new Swiper(".mySwiper.village", {
 });
 
 
-// 이벤트 섹션 썸네일 
+//Thumbs gallery loop swiper
 var swiper3 = new Swiper(".thumbSlide", {
     direction: "vertical",
-    loop: true,
+    // loop: true,
     slidesPerView: 3,
-    freeMode: true,
+    // freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
   });
   var swiper4 = new Swiper(".mainSlide", {
-    loop: true,
-    navigation: {
-      nextEl: ".mainSlide .swiper-button-next",
-      prevEl: ".mainSlide .swiper-button-prev",
-    },
+    // loop: true,
     thumbs: {
       swiper: swiper3,
     },
   });
-
-
-
-
-    // 사진이 꽉차보이는 갤러리디자인
-    // $('.slider2.slider-for').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     asNavFor: '.slider2.slider-nav'
-    // });
-    // $('.slider2.slider-nav').slick({
-    //     slidesToShow: 3,
-    //     slidesToScroll: 3,
-    //     asNavFor: '.slider2.slider-for',
-    //     infinite: true,
-    //     centerMode: true,
-    //     focusOnSelect: true,
-    // });
-
-
-
-
-
-// 행사 이벤트 스와이퍼 슬라이드 
-// var swiper = new Swiper(".mySwiper.list", {
-//     pagination: 1,
-//     slidesPerView: 2,
-//     spaceBetween: 30,
-//     pagination: {
-//         el: ".swiper-pagination.list",
-//         clickable: true,
-//     },
-// });
-
-
 //----------------------------------------------------
 
 
@@ -200,20 +120,21 @@ $(".tabV ul li").click(function () {
     $("#" + $(this).data('id')).addClass('on').siblings().removeClass('on');
 });
 
-//Tab
-
-// $(".fadeTab .conBox").hide().eq(0).show();
-// $(".fadeTab li").click(function () {
-//     $(this).addClass('on').siblings().removeClass('on');
-//     $("#" + $(this).data('id')).fadeIn(1000)
-//         .siblings('.conBox').fadeOut(300);
-// });
-
-
 //----------------------------------------------------
 
 
 
+// //Javascript
+// //최초 로드 시 iframe 높이값 비율에 맞게 세팅
+// var $videoIframe = document.getElementById('video');
+// var responsiveHeight = $videoIframe.offsetWidth * 0.5625;
+// $videoIframe.setAttribute('height', responsiveHeight);
+
+// //브라우저 리사이즈 시 iframe 높이값 비율에 맞게 세팅
+// window.addEventListener('resize', function(){
+//     responsiveHeight = $videoIframe.offsetWidth * 0.5625;
+//     $videoIframe.setAttribute('height', responsiveHeight);
+// });
 
 
 
