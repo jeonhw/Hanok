@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <title>Seoul Hanok Portal</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="lib/vegas.min.css">
-    <link rel="stylesheet" href="css/seoul.css" />
-    <link rel="stylesheet" media="all and (max-width: 640px)" href="css/mseoul.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="../lib/vegas.min.css">
+    <link rel="stylesheet" href="/css/seoul.css" />
+    <link rel="stylesheet" media="all and (max-width: 640px)" href="/css/mseoul.css" />
 </head>
 
 <body>
@@ -164,7 +165,6 @@
                                     </div>
                                     <div id="con11" class="conBox">
                                         <div class="roundbox">
-
                                             <div class="roundimg two"></div>
                                         </div>
                                         <div class="roundtxt two">
@@ -321,60 +321,80 @@
 
     </section>
 
-    <!-- <section class="section3"> -->
-    <!-- <div data-aos="fade-right" data-aos-duration="2500">
-            <div class="inner two">
-                <div class="txt">
-                    <span>이달의<br>행사 일정</span>
-                    <div class="line"></div>
-                    <span>한옥마을의<br>이달의 행사 정보입니다.</span>
-                </div>
-            </div>
-        </div> -->
-
     <section class="section3">
         <div class="inner">
-            <!-- <h1>dd</h1>/ -->
             <div data-aos="fade-right" data-aos-duration="2500">
                 <div class="txt">
-                    <span>한옥마을<br>소개</span>
+                    <span>이달의<br>행사일정</span>
                     <div class="line"></div>
-                    <span>한옥마을의<br>역사와 현황입니다.</span>
+                    <span>한옥마을의 행사일정 안내입니다.</span>
                 </div>
             </div>
         </div>
+
+
+
+
         <div class="thumbGallerry">
             <div class="swiper-container mainSlide">
                 <div class="swiper-wrapper">
+                    <!-- 6월 행사 일정 -->
                     <div class="swiper-slide bg01">
+                        <div class="poster one"></div>
+                        <div class="poster two"></div>
+                        <div class="poster three"></div>
                     </div>
+                    <!-- 7월 행사 일정 -->
                     <div class="swiper-slide bg02">
+                        <div class="poster one">2-1</div>
+                        <div class="poster two">2-2</div>
+                        <div class="poster three">2-3</div>
                     </div>
+                    <!-- 8월 행사 일정 -->
                     <div class="swiper-slide bg03">
+                        <div class="poster one">3-1</div>
+                        <div class="poster two">3-2</div>
+                        <div class="poster three">3-3</div>
+                    </div>
+                    <!-- 9월 행사 일정 -->
+                    <div class="swiper-slide bg04">
+                        <div class="poster one"></div>
+                        <div class="poster two"></div>
+                        <div class="poster three"></div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+
             </div>
             <div class="swiper-container thumbSlide">
                 <div class="swiper-wrapper">
+                    <!-- 6월 -->
                     <div class="swiper-slide bg01">
-                        <div class="squaretxt">
-                            <span>5월일정</span>
-                            <p>ㆍ[작은쉼터갤러리] 전시 : 북촌풍경스케치</p>
-                            <p>ㆍ[작은쉼터갤러리] 전시 : 북촌풍경스케치</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide bg02">
-                        <div class="squaretxt">
+                        <div class="box june">
                             <span>6월일정</span>
                             <p>ㆍ[작은쉼터갤러리] 전시 : 북촌풍경스케치</p>
                             <p>ㆍ[작은쉼터갤러리] 전시 : 북촌풍경스케치</p>
                         </div>
                     </div>
-                    <div class="swiper-slide bg03">
-                        <div class="squaretxt">
+                    <!-- 7월 -->
+                    <div class="swiper-slide bg02">
+                        <div class="box july">
                             <span>7월일정</span>
+                            <p>ㆍ[작은쉼터갤러리] 전시 : 북촌풍경스케치</p>
+                            <p>ㆍ[작은쉼터갤러리] 전시 : 북촌풍경스케치</p>
+                        </div>
+                    </div>
+                    <!-- 8월 -->
+                    <div class="swiper-slide bg03">
+                        <div class="box aug">
+                            <span>8월일정</span>
+                            <p>ㆍ[작은쉼터갤러리] 전시 : 북촌풍경스케치</p>
+                            <p>ㆍ[작은쉼터갤러리] 전시 : 북촌풍경스케치</p>
+                        </div>
+                    </div>
+                    <!-- 9월 -->
+                    <div class="swiper-slide bg04">
+                        <div class="box sep">
+                            <span>9월일정</span>
                             <p>ㆍ[작은쉼터갤러리] 전시 : 북촌풍경스케치</p>
                             <p>ㆍ[작은쉼터갤러리] 전시 : 북촌풍경스케치</p>
                         </div>
@@ -382,6 +402,19 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </section>
     <!-- <div class="tabV">
@@ -618,48 +651,48 @@
     <section class="section6">
         <div class="inner">
             <div class="topsec">
-            <!-- 공지사항 탭 -->
+                <!-- 공지사항 탭 -->
                 <div class="tabV">
-                <ul>
-                    <li data-id="con19" class="on">공지</li>
-                    <li data-id="con20">보도자료</li>
-                </ul>
-                <div>
-                    <div class="content">
-                        <div id="con19" class="conBox on">
-                            <div class="news">
-                            <p><a href="#">
-                                [북촌한옥청] '21년 하반기 전시대관 모집(~5/31까지)
-                            </a>
-                            <a>20-05-28</a>
-                        </p>
-                            <p>[배렴가옥]-나의 이야기, 마음을 물들이다(5/11~6/15)
-                                <a>20-05-28</a>
-                            </p>
-                            <p>가가호호(家家戶戶) : 가족, 이웃들과 함께하는 5월의 북촌문화요일<a>20-05-28</a></p>
-                            <p>[홍건익가옥]-전각(5/7)<a>20-05-28</a></p>
-                            <p>[북촌마을서재] 어린이날 맞이 교류행사<a>20-05-28</a></p>
-                            <p>[북촌마을서재] 2021년 상반기 마을강좌 프로그램 참여자 모집<a>20-05-28</a></p>
+                    <ul>
+                        <li data-id="con19" class="on">공지</li>
+                        <li data-id="con20">보도자료</li>
+                    </ul>
+                    <div>
+                        <div class="content">
+                            <div id="con19" class="conBox on">
+                                <div class="news">
+                                    <p><a href="#">
+                                            [북촌한옥청] '21년 하반기 전시대관 모집(~5/31까지)
+                                        </a>
+                                        <a>20-05-28</a>
+                                    </p>
+                                    <p>[배렴가옥]-나의 이야기, 마음을 물들이다(5/11~6/15)
+                                        <a>20-05-28</a>
+                                    </p>
+                                    <p>가가호호(家家戶戶) : 가족, 이웃들과 함께하는 5월의 북촌문화요일<a>20-05-28</a></p>
+                                    <p>[홍건익가옥]-전각(5/7)<a>20-05-28</a></p>
+                                    <p>[북촌마을서재] 어린이날 맞이 교류행사<a>20-05-28</a></p>
+                                    <p>[북촌마을서재] 2021년 상반기 마을강좌 프로그램 참여자 모집<a>20-05-28</a></p>
+                                </div>
                             </div>
-                        </div>
-                        <div id="con20" class="conBox">
-                            <div class="news">
-                            <p>서울시, 북촌의 한옥의 일상 온라인으로 만나는 '21년「한옥생활교실」<a>20-05-28</a></p>
-                            <p>서울시, 주민 셀프활용 '한옥유지관리 매뉴얼' 배포…<a>20-05-28</a></p>
-                            <p>서울시 공공한옥 ‘배렴가옥’서 작가 9인의 산수화 ‘지금-여기’ 기획전시<a>20-05-28</a></p>
-                            <p>웃음소리 가득한 가정의 달, 북촌문화센터 5월의 토요문화행사<a>20-05-28</a></p>
-                            <p>북촌에 완연한 봄기운… 북촌문화센터, 4월의 토요 문화행사 운영<a>20-05-28</a></p>
-                            <p>서울시 북촌문화센터, 문화강좌 프로그램 ‘봄학기 수강생 모집’<a>20-05-28</a></p>
-                        </div>
+                            <div id="con20" class="conBox">
+                                <div class="news">
+                                    <p>서울시, 북촌의 한옥의 일상 온라인으로 만나는 '21년「한옥생활교실」<a>20-05-28</a></p>
+                                    <p>서울시, 주민 셀프활용 '한옥유지관리 매뉴얼' 배포…<a>20-05-28</a></p>
+                                    <p>서울시 공공한옥 ‘배렴가옥’서 작가 9인의 산수화 ‘지금-여기’ 기획전시<a>20-05-28</a></p>
+                                    <p>웃음소리 가득한 가정의 달, 북촌문화센터 5월의 토요문화행사<a>20-05-28</a></p>
+                                    <p>북촌에 완연한 봄기운… 북촌문화센터, 4월의 토요 문화행사 운영<a>20-05-28</a></p>
+                                    <p>서울시 북촌문화센터, 문화강좌 프로그램 ‘봄학기 수강생 모집’<a>20-05-28</a></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
-            <!-- 유튜브 -->
+                <!-- 유튜브 -->
                 <div>
-                <h2>추천 영상</h2>
-                <iframe width="724" 
-                height="417" src="https://www.youtube.com/embed/uw_Irfxtmic" title="YouTube video player"></iframe>
+                    <h2>추천 영상</h2>
+                    <iframe width="724" height="417" src="https://www.youtube.com/embed/uw_Irfxtmic"
+                        title="YouTube video player"></iframe>
                 </div>
             </div>
             <div class="bottomsec">
@@ -700,7 +733,7 @@
         </div>
     </section>
 
- 
+
     <footer class="footer">
         <div></div>
     </footer>
@@ -723,8 +756,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
-    <script src="lib/vegas.min.js"></script>
-    <script src="js/seoul.js"></script>
+    <script src="../lib/vegas.min.js"></script>
+    <script src="../js/seoul.js"></script>
 </body>
 
 
