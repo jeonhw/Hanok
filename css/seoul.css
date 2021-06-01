@@ -118,18 +118,18 @@ div.txt span:nth-child(2){
     position: relative;
 
 }
-div.txt span:nth-child(2)::after{
+/* div.txt span:nth-child(2)::after{
     position: absolute;
     width: 1px;
     height: 20px;
     background: #000;
     top: 0
     ;
-}
+} */
 
 /* -------------------- */
 
-header .global {
+header .global:nth-child(1) {
     width: 50%;
     /* margin-right: 60px; */
     display: flex;
@@ -145,22 +145,6 @@ header .global span {
     margin: 0 0 0 20px;
     position: relative;
 }
-
-
-/* 
-header .global span::after {
-    width: 1px;
-    height: 15px;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.5);
-    content: "";
-    top: 8px;
-    right: -10px;
-}
-
-header .global span:last-child::after {
-    display: none;
-} */
 
 header .mMenuBt {
     display: none;
@@ -233,7 +217,8 @@ nav ul.gnb li.gnbMenu .title {
     display: block;
     font-weight: 500;
     font-size: 1.5rem;
-    font-family: 'Noto Serif KR'
+    font-family: 'Noto Serif KR';
+    color: #1E1E1E;
 }
 
 /* 모바일용 서브메뉴 감추기 */
@@ -1503,7 +1488,7 @@ section.section5 ul li:nth-child(3) {
 
 /* 우수 한옥 오버 시 글자등장 */
 
-/* .card {
+.card {
     position: relative;
     display: -webkit-box;
     -webkit-box-align: end;
@@ -1539,7 +1524,7 @@ section.section5 ul li:nth-child(3) {
     transform: translateY(-50%);
 }
 
-.content {
+.txtbox {
     position: relative;
     display: -webkit-box;
     display: flex;
@@ -1580,14 +1565,17 @@ section.section5 ul li:nth-child(3) {
     transform: translateY(0);
 }
 
-.content {
+.txtbox {
     -webkit-transform: translateY(calc(100% - 4.5rem));
     transform: translateY(calc(100% - 4.5rem));
 }
 
 
 /* 제목 제외 */
-section.section5.content>*:not(.title) {
+
+
+
+.txtbox>*:not(.title) {
     opacity: 0;
     -webkit-transform: translateY(1rem);
     transform: translateY(1rem);
@@ -1609,14 +1597,14 @@ section.section5.content>*:not(.title) {
     transform: translateY(-50%);
 }
 
-.card:hover .content,
-.card:focus-within .content {
+.card:hover .txtbox,
+.card:focus-within .txtbox {
     -webkit-transform: translateY(0);
     transform: translateY(0);
 }
 
-.card:hover .content>*:not(.title),
-.card:focus-within .content>*:not(.title) {
+.card:hover .txtbox>*:not(.title),
+.card:focus-within .txtbox>*:not(.title) {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -1626,8 +1614,8 @@ section.section5.content>*:not(.title) {
 
 .card:focus-within:before,
 .card:focus-within:after,
-.card:focus-within .content,
-.card:focus-within .content>*:not(.title) {
+.card:focus-within .txtbox,
+.card:focus-within .txtbox>*:not(.title) {
     -webkit-transition-duration: 1s;
     transition-duration: 2s;
 } 
