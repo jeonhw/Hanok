@@ -1826,7 +1826,7 @@ footer{
     background:#202020;
     width: 100%;
     height: 250px;
-    color: #cccbcb;
+    color: rgba(100, 100, 100, 0.9);
     font-size: 1.4rem;
     align-items: center;
     /* line-height: 125px; */
@@ -1849,16 +1849,35 @@ footer div.inner{
     flex-direction: column;
     /* align-items: center; */
     justify-content:center;
+    position: relative;
 }
 
 
 footer div.inner p{
-    padding-right: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 2.2rem;
+    cursor: pointer;
+}
+
+footer div.inner p::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 20px;
+    top: 4px;
+    /* left: -0; */
+    /* right: 0px; */
+    background: rgba(100, 100, 100, 1);
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin-left: 14px;
 }
 
 
-
-
+footer div.inner p:hover{
+    opacity: 0.8;
+}
 
 
 
