@@ -1,0 +1,315 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+.inner {
+    width: 100%;
+}
+
+
+header {
+    width: 100%;
+}
+
+body {
+    min-width: 320px;
+}
+
+header .logo {
+    width: 35%;
+    background-size: contain;
+}
+
+header .global {
+    width: 40%;
+}
+
+header .global span:last-child {
+    display: none;
+}
+
+header .mMenuBt {
+    display: block;
+    font-size: 2rem;
+    margin: 0 20px 0 0;
+}
+
+/* scroll에 의해 header.color로 변경 */
+header.color .mMenuBt {
+    color: #666;
+    transition: color 0.3s;
+}
+
+nav {
+    position: fixed;
+    width: 90%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: white;
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+nav.open {
+    transform: translateX(0%);
+}
+
+/* 모바일에서는 nav가 안보이다가, 메뉴 아이콘을 클릭하면 nav가 나타남 */
+nav ul.gnb {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 70px 50px 50px;
+    width: 100%;
+    position: relative;
+}
+
+nav ul.gnb .mCloseBt {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 23px;
+}
+
+nav ul.gnb .mCloseBt i {
+    display: block;
+    font-size: 2rem;
+}
+
+nav ul.gnb li.gnbMenu {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+nav ul.gnb li.gnbMenu .title {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+/* 모바일용 서브메뉴 보이기 */
+nav ul.gnb ul.mSnb {
+    display: block;
+    width: 100%;
+}
+
+nav ul.gnb ul.mSnb li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.14rem;
+    margin: 1px 0 0 0;
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+/* PC용 서브메뉴 감추기 */
+nav .snb {
+    display: none;
+}
+
+
+/* scroll 버튼 */
+.scroll {
+    right: 50%;
+    top: unset;
+    bottom: 0;
+    transform: translateX(50%);
+}
+
+nav ul.gnb li.gnbMenu .title {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: rgb(87, 86, 86);
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+
+nav a,
+nav a:visited {
+    text-decoration: none;
+    font-weight: 200;
+    color: #202020;
+    font-family: sans-serif;
+    color: rgb(87, 86, 86);
+    font-family: 'noto sans kr';
+}
+
+
+/* nav 끝 */
+
+
+header {
+    height: 70px;
+}
+
+/* 각 섹션 타이틀 */
+/* ex) 한옥마을소개 */
+div.txt span:nth-child(1) {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+div.txt span {
+    position: relative;
+    font-size: 1rem;
+}
+
+/* 타이틀 아래 라인 넣을지 말지 고민 중 */
+div.txt span:nth-child(2)::after {
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background: #000;
+    top: 0;
+}
+
+section.section2 .txt {
+    /* width: 320px; */
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* section */
+
+section {
+    height: 100vh;
+}
+
+section.section2 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    background: url(../img/header_bg.png)50% 50% no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+section.section2 .tabV {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.swiper-container .swiper-wrapper.village {
+    display: flex;
+    /* height: 650px; */
+    align-items: center;
+}
+
+section.section2 .inner {
+    display: flex;
+    flex-direction: column;
+}
+
+section.section2 .tabV ul {
+    display: flex;
+    flex-direction: row;    margin: 0 auto;
+}
+
+
+/* roundimg 공통 설정 */
+.swiper-container.mySwiper.village .swiper-slide div.roundimg {
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+}
+
+.roundbox {
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+section .tabV .content .conBox.on {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+div.content div.roundtxt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: url(../img/그룹\ 82.png) 50% 50% no-repeat;
+    background-size: contain;
+    /* padding-left: 5%; */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+div.content span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.98rem
+}
+
+div .roundtxt h1 {
+    font-size: 1.7rem;
+    /* padding-bottom: 5%; */
+    font-weight: 500;
+    font-family: 'Noto Serif KR', serif;
+    /* line-height: 4rem; */
+}
+
+div .roundtxt p.engname {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color: rgba(0, 0, 0, 0.2);
+    padding: 1% 0;
+    /* position: sticky; */
+}
+
+div .roundtxt p.button {
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+section.section2 .tabV:nth-child(1) .content {
+    width: 100%;
+    height: 80vh;
+    color: #333;
+}
+
+section.section2 .tabV ul li {
+    font-size:1rem;
+}
+
+section.section2 .swiper-slide{
+    height: auto;
+}
+
+section.section2 .swiper-slide .swiper-pagination{
+    display: none;
+}

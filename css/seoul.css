@@ -6,7 +6,6 @@
     padding: 0;
     margin: 0;
     /* border: 2px solid  rgb(255, 198, 227); */
-
 }
 
 :root {
@@ -110,7 +109,7 @@ header .logo a:visited {
     transition: color 0.3s;
 }
 
-/* 타이틀 */
+/* 각 섹션 타이틀 */
 div.txt span:nth-child(1){
     padding-bottom: 2rem;
 }
@@ -148,10 +147,7 @@ header .global span {
 }
 
 
-/* .swiper-wrapper { 
-    display: -webkit-inline-flex; 
-} */
-
+/* 
 header .global span::after {
     width: 1px;
     height: 15px;
@@ -164,7 +160,7 @@ header .global span::after {
 
 header .global span:last-child::after {
     display: none;
-}
+} */
 
 header .mMenuBt {
     display: none;
@@ -172,7 +168,7 @@ header .mMenuBt {
 
 
 /* scroll에 의해 header.color로 변경 */
-header.color {
+/* header.color {
     background: rgba(255, 255, 255, 1);
     transition: all 0.3s;
     color: #666;
@@ -188,7 +184,7 @@ header.color .global span::after {
     background: #666;
     transition: all 0.3s;
 
-}
+} */
 
 /* 네비게이션*/
 nav {
