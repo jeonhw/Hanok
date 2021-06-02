@@ -156,21 +156,27 @@ header {
 div.txt span:nth-child(1) {
     padding-bottom: 1rem;
     font-size: 2rem;
+    text-align: center;
 }
 
 div.txt span {
     position: relative;
     font-size: 1rem;
+    text-align: center;
 }
 
 /* 타이틀 아래 라인 넣을지 말지 고민 중 */
-div.txt span:nth-child(2)::after {
+/* div.txt span:nth-child(2)::after {
     position: absolute;
     width: 1px;
     height: 20px;
     background: #000;
     top: 0;
-}
+} */
+/* 라인 뺌 */
+
+
+
 
 section.section2 .txt {
     /* width: 320px; */
@@ -312,4 +318,19 @@ section.section2 .swiper-slide{
 
 section.section2 .swiper-slide .swiper-pagination{
     display: none;
+}
+
+
+div .roundtxt p.button::before {
+    width: 100px;
+    height: 1px;
+    background: #A7A7A7;
+    content: "";
+    /* top: 1px; */
+    /* bottom: 1px; */
+    left: 0;
+    display: block;
+    top: 50%;
+    bottom: 500px;
+    position: absolute;
 }

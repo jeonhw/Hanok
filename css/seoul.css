@@ -1875,9 +1875,16 @@ footer div.inner p::after {
 }
 
 
+footer div.inner p:last-child::after{
+    display:  none;
+}
+
+
 footer div.inner p:hover{
     opacity: 0.8;
 }
+
+
 
 
 
