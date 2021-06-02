@@ -305,8 +305,8 @@ section.section3 {
     background-color: white;
     position: relative;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 140vh;
+    justify-content: center;
+    height: 120vh;
 }
 
 
@@ -1226,7 +1226,7 @@ section .tabV:nth-child(2) .content {
     background: url(../img/test_img35.jpg) 50% 50% 
     no-repeat;
     background-size: cover;
-    margin-right: 3rem;
+    /* margin-right: 3rem; */
 }
 .thumbGallerry .swiper-slide.bg02 div.poster.two{
     width: 355px;
@@ -1243,7 +1243,7 @@ section .tabV:nth-child(2) .content {
     background: url(../img/festival.png) 50% 50% 
     no-repeat;
     background-size: contain;
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
 }
 
 /* ----------------------------------- */
@@ -1258,7 +1258,7 @@ section .tabV:nth-child(2) .content {
     background: url(../img/header_bg2.png) 50% 50% 
     no-repeat;
     background-size: cover;
-     margin-right: 3rem;
+     /* margin-right: 3rem; */
 }
 .thumbGallerry .swiper-slide.bg01 div.poster.two{
     width: 355px;
@@ -1274,7 +1274,7 @@ section .tabV:nth-child(2) .content {
     background: url(../img/festival.png) 50% 50% 
     no-repeat;
     background-size: contain;
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
 }
 
 /* ----------------------------------- */
