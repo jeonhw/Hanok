@@ -1338,18 +1338,23 @@ div .roundstep {
     transition: all 1s;
 }
 
+
+div .roundstep:hover{
+    background:#69162950;
+}
+
 /* 일단 pass */
-div.roundstep.on::before {
+/* div.roundstep:hover::before {
     transition: 0.5s;
     border-top: 4px solid #9E2742;
     padding: -7px;
-}
+} */
 
-div.roundstep.on::after {
+/* div.roundstep.on::after {
     transition: 0.75s;
     border-right: 4px solid #9E2742;
     padding: -7px;
-}
+} */
 
 
 div .roundstep p:nth-child(1) {
