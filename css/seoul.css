@@ -178,6 +178,7 @@ nav {
     z-index: 110;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    
 }
 
 nav a,
@@ -186,6 +187,7 @@ nav a:visited {
     font-weight: 200;
     color: #202020;
     font-family: sans-serif;
+    
 }
 
 nav ul.gnb {
@@ -196,7 +198,7 @@ nav ul.gnb {
     align-items: center;
     margin: 0 auto;
     font-family: 'Noto Sans KR', sans-serif;
-
+    
 }
 
 nav ul.gnb li.gnbMenu {
@@ -207,6 +209,7 @@ nav ul.gnb li.gnbMenu {
     font-weight: 600;
     cursor: pointer;
     font-family: 'Noto Sans KR', sans-serif;
+    
 }
 
 nav ul.gnb li.gnbMenu .title {
@@ -227,9 +230,8 @@ nav ul.gnb ul.mSnb {
     display: none;
 }
 
-
-
 /* pc용 서브메뉴 */
+
 nav .snb {
     display: flex;
     justify-content: center;
@@ -242,12 +244,15 @@ nav .snb {
     top: 90px;
     left: 0;
     z-index: 10;
+    transition: all 0.5s ease-in-out;
 }
 
+
 nav .gnb:hover .snb {
-    height: 398px;
-    transition: all 0.5s ease;
+    height: 380px;
+    transition: all 0.5s ease-in-out;
 }
+
 
 nav .snb ul {
     width: 200px;
@@ -259,9 +264,16 @@ nav .snb ul li {
     line-height: 40px;
     /* color: #707070; */
     text-align: center;
-    font-size: 1.2rem;
-    color: #1E1E1E;
+    font-size: 1.3rem;
+    color: #414141;
 }
+
+
+
+
+
+
+
 
 
 /***************** section *****************/
@@ -503,6 +515,34 @@ div.txt span:nth-child(2) {
     background-size: cover;
 }
 
+/* ------------------------------------------ */
+
+/* 운현궁 */
+
+/* 운현궁 역사 */
+.swiper-container.mySwiper.village .swiper-slide.four div .roundimg.one {
+    background: url(../img/woonhyun_history.jpg)50% 50% no-repeat;
+    background-size: cover;
+}
+
+/* 운현궁 현황 */
+.swiper-container.mySwiper.village .swiper-slide.four div .roundimg.two {
+    background: url(../img/woonhyun_now.jpg)50% 50% no-repeat;
+    background-size: cover;
+}
+
+/* 운현궁 소개 */
+.swiper-container.mySwiper.village .swiper-slide.four div .roundimg.three {
+    background: url(../img/gyeongbokgung_Insadong_Info.jpg)50% 50% no-repeat;
+    background-size: cover;
+}
+
+
+/* ------------------------------------------ */
+
+
+
+
 
 div .roundtxt.one {
     align-items: center;
@@ -670,9 +710,10 @@ header .global span {
     margin: 0 0 0 20px;
     position: relative;
     font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.2rem;
 }
 
-header .global span::after {
+header .global span:nth-child(1):after {
     width: 1px;
     height: 15px;
     position: absolute;
