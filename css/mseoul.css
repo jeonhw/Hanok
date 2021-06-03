@@ -553,3 +553,8 @@ section.section3{
     align-items: center;
     display: none;
 }
+
+div.box p a{
+    /* color: #1E1E1E; */
+    font-size: 0.97rem;
+}
