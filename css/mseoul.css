@@ -3,8 +3,10 @@
 
 .inner {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 
 header {
     width: 100%;
@@ -21,6 +23,7 @@ header .logo {
 
 header .global {
     width: 40%;
+    display: none;
 }
 
 header .global span:last-child {
@@ -233,6 +236,55 @@ section.section2 .tabV ul {
 }
 
 
+/* thumb gallery */
+
+.thumbGallerry .swiper-slide div.box {
+    font-size: 0.94rem;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: left; */
+    line-height: 1rem;
+    width: 100%;
+    padding-left: 0rem;
+    color: black;
+    text-decoration-color: none;
+    line-height: 2rem;
+    padding: 1rem;
+}
+
+.thumbGallerry .swiper-slide div.box span {
+    font-size: 1.8rem;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: left; */
+    padding-bottom: 0rem;
+    font-family: 'Noto Serif KR','serif';
+    color: #623342;
+    font-weight: 600;
+}
+
+.thumbGallerry .thumbSlide {
+    width: 80%;
+    height: 100%;
+    cursor: pointer;
+    /* padding: 2rem; */
+    border-left: 2px solid #9E2742;
+}
+
+
+/* .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+    align-items: center;
+    display: none;
+} */
+
 /* roundimg 공통 설정 */
 .swiper-container.mySwiper.village .swiper-slide div.roundimg {
     width: 250px;
@@ -333,4 +385,155 @@ div .roundtxt p.button::before {
     top: 50%;
     bottom: 500px;
     position: absolute;
+}
+
+.thumbGallerry .swiper-slide.bg01 div.poster.one{
+    width: 155px;
+    height: 210px;
+    background: url(../img/header_bg2.png) 50% 50% 
+    no-repeat;
+    background-size: cover;
+     /* margin-right: 3rem; */
+}
+.thumbGallerry .swiper-slide.bg01 div.poster.two{
+    width: 155px;
+    height: 210px;
+    background: url(../img/이미지\ 31.png) 50% 50% 
+    no-repeat;
+    background-size: cover;
+    margin-top: 0%;
+}
+.thumbGallerry .swiper-slide.bg01 div.poster.three{
+    width: 155px;
+    height: 210px;
+    background: url(../img/festival.png) 50% 50% 
+    no-repeat;
+    background-size: cover;
+    /* margin-left: 3rem; */
+    display: none;
+}
+
+.thumbGallerry .swiper-slide.bg02 div.poster.one {
+    width: 155px;
+    height: 210px;
+    background: url(../img/test_img35.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.thumbGallerry .swiper-slide.bg02 div.poster.two {
+    width: 155px;
+    height: 210px;
+    background: url(../img/이미지\ 31.png) 50% 50% no-repeat;
+    background-size: cover;
+    margin-top: 20%;
+    /* margin-left: 3rem; */
+    margin: 0;
+}
+
+.thumbGallerry .swiper-slide.bg02 div.poster.three {
+    width: 155px;
+    height: 210px;
+    background: url(../img/festival.png) 50% 50% no-repeat;
+    background-size: cover;
+    /* margin-left: 3rem; */
+    margin: 0;
+    display: none;
+}
+
+
+.thumbGallerry {
+    width: 100%;
+    height:auto;
+    /* margin: 0 auto 200px; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* background: #000; */
+    margin: 0 auto;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.thumbGallerry .mainSlide {
+    width: 100%;
+    height: 70%;
+    /* margin: 0; */
+    overflow: hidden;
+    display: flex;
+}
+.thumbGallerry .swiper-slide {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    /* margin-left: 4rem; */
+    /* overflow: hidden; */
+    width: 100%;
+}
+
+.thumbGallerry .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    /* height: 10%; */
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+    align-items: center;
+    margin: auto;
+}
+
+.thumbGallerry .thumbSlide {
+    width: 85%;
+    /* height: 180px; */
+    cursor: pointer;
+    /* padding: 2rem; */
+    border-left: none;
+}
+
+
+
+.thumbGallerry .thumbSlide .swiper-slide{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.thumbGallerry .thumbSlide .swiper-slide-thumb-active {
+    opacity: 1;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+    transition: all 1s;
+    /* border: 1px solid #623342q; */
+    border-bottom: none;
+    border-top: none;
+    border: 3px solid #9E2742;
+    height: auto;
+
+}
+
+.swiper-slide.bg01{
+    height:auto;
+}
+
+.thumbGallerry .thumbSlide {
+    width: 85%;
+    height: 180px;
+    cursor: pointer;
+    /* padding: 2rem; */
+    border-left: none;
+}
+
+
+section.section3{
+    height: 100vh;
+}
+
+.thumbGallerry .mainSlide .swiper-slide {
+    height: 100%;
+    margin: 1rem 0;
 }

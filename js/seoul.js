@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     //리사이징 할때마다 새로고침
     var lastWidth = $(window).width();
@@ -11,34 +10,45 @@ $(document).ready(function () {
     });
 
 
-// vegas slide
-$(function(){
-    $('.header').vegas({
-        init: function (globalSettings) {
-            console.log("Init");
-        },
-        play: function (index, slideSettings) {
-            console.log("Play");
-        },
-        walk: function (index, slideSettings) {
-            console.log("Slide index " + index + " image " + slideSettings.src);
-        },
-        slides:[
-            {src: "../img/header_bg.png", delay:3800},
-            {src: "../img/header_bg2.png", delay:3800},
-            {src: "../img/header_bg3.png", delay:3800},
-            {src: "../img/header_bg5.png", delay:3800},
+    // vegas slide
+    $(function () {
+        $('.header').vegas({
+            init: function (globalSettings) {
+                console.log("Init");
+            },
+            play: function (index, slideSettings) {
+                console.log("Play");
+            },
+            walk: function (index, slideSettings) {
+                console.log("Slide index " + index + " image " + slideSettings.src);
+            },
+            slides: [{
+                    src: "../img/header_bg.png",
+                    delay: 3800
+                },
+                {
+                    src: "../img/header_bg2.png",
+                    delay: 3800
+                },
+                {
+                    src: "../img/header_bg3.png",
+                    delay: 3800
+                },
+                {
+                    src: "../img/header_bg5.png",
+                    delay: 3800
+                },
 
-        ],
-        transition: 'fade'
+            ],
+            transition: 'fade'
+        })
     })
-})
 
 
 
-    $(".roundstep").hover(function(){
+    $(".roundstep").hover(function () {
         $(this).toggleClass("on");
-      });
+    });
 
 
     //-----------------------------모바일메뉴
@@ -97,17 +107,48 @@ var swiper = new Swiper(".mySwiper.village", {
 var swiper3 = new Swiper(".thumbSlide", {
     direction: "vertical",
     // loop: true,
-    slidesPerView: 3,
+    slidesPerView: 1,
     // freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-  });
-  var swiper4 = new Swiper(".mainSlide", {
+    pagination: {
+        // el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            // direction: "horizontal",
+            //   spaceBetween: 0,
+        },
+        768: {
+            slidesPerView: 3,
+            //   spaceBetween: 40,
+        },
+        1024: {
+            slidesPerView: 3,
+            //   spaceBetween: 50,
+        },
+    },
+});
+
+var swiper4 = new Swiper(".mainSlide", {
     // loop: true,
     thumbs: {
-      swiper: swiper3,
+        swiper: swiper3,
     },
-  });
+});
+
+// var iw = window.innerWidth;
+// if(iw < 641){
+//     var swiper2 = new Swiper('.swiper-container .thumbslide'),
+//     effect : 'flip'
+//     grabcursor : true,
+//     loop : true,
+
+// }
+
+
 //----------------------------------------------------
 
 
