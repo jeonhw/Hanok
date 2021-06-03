@@ -108,6 +108,7 @@ var swiper3 = new Swiper(".thumbSlide", {
     direction: "vertical",
     // loop: true,
     slidesPerView: 1,
+    allowTouchMove: false,
     // freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
