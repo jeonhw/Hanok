@@ -261,7 +261,7 @@ section.section2 .tabV ul {
     flex-direction: column;
     justify-content: center;
     /* text-align: left; */
-    padding-bottom: 0rem;
+    padding-bottom: 1rem;
     font-family: 'Noto Serif KR','serif';
     color: #623342;
     font-weight: 600;
