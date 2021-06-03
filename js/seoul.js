@@ -130,6 +130,7 @@ var swiper3 = new Swiper(".thumbSlide", {
         },
         1024: {
             slidesPerView: 3,
+            allowTouchMove: true,
             //   spaceBetween: 50,
         },
     },
