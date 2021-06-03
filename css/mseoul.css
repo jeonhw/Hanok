@@ -239,8 +239,12 @@ section.section2 .inner {
 }
 
 section.section2 .tabV ul {
-    display: flex;
-    flex-direction: row;    margin: 0 auto;
+    text-align: center;
+    flex-direction: row;
+    margin: 1.2rem auto;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
 }
 
 
@@ -315,7 +319,7 @@ section.section2 .tabV ul {
 section .tabV .content .conBox.on {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 600px;
     width: 100vw;
     /* align-items: center; */
     justify-content: center;
