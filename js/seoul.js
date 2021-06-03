@@ -118,11 +118,13 @@ var swiper3 = new Swiper(".thumbSlide", {
     breakpoints: {
         640: {
             slidesPerView: 1,
+            allowTouchMove: false,
             // direction: "horizontal",
             //   spaceBetween: 0,
         },
         768: {
             slidesPerView: 3,
+            allowTouchMove: false,
             //   spaceBetween: 40,
         },
         1024: {

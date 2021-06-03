@@ -931,7 +931,7 @@ header .global span:nth-child(1):after {
 
 .swiper-pagination-bullet-active {
     color: #fff;
-    background: #9E2742;
+    /* background: #9E2742; */
     transition: all 1s;
     position: relative;
 }
@@ -1987,7 +1987,4 @@ div.box p a{
     color: #1E1E1E;
     text-decoration: none;
 }
-
-
-
 
