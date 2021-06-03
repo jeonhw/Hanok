@@ -312,14 +312,14 @@ section.section2 .tabV ul {
 section .tabV .content .conBox.on {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: auto;
     width: 90%;
     align-items: center;
     justify-content: center;
     margin: auto;
 }
 div.content div.roundtxt {
-    width: 100%;
+    width: 82%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -330,7 +330,7 @@ div.content div.roundtxt {
     margin: 0;
     padding: 0;
     align-items: center;
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 
 div.content span {
@@ -560,4 +560,10 @@ section.section3{
 div.box p a{
     /* color: #1E1E1E; */
     font-size: 0.97rem;
+}
+
+section.section2 .tabV ul li {
+    margin: 5px;
+    border-radius: 2px;
+    margin-bottom: 2rem;
 }
