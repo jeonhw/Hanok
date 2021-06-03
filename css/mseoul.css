@@ -537,3 +537,12 @@ section.section3{
     height: 100%;
     margin: 1rem 0;
 }
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+    align-items: center;
+    display: none;
+}
