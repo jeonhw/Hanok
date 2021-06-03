@@ -42,6 +42,10 @@ header.color .mMenuBt {
     transition: color 0.3s;
 }
 
+a{
+    text-decoration: none;
+}
+
 nav {
     position: fixed;
     width: 90%;
@@ -190,6 +194,7 @@ section.section2 .txt {
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    margin-top: 3rem;
 }
 
 /* section */
@@ -203,6 +208,8 @@ section.section2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .header {

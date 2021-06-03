@@ -1983,6 +1983,10 @@ footer div.inner p:hover{
     opacity: 0.8;
 }
 
+div.box p a{
+    color: #1E1E1E;
+    font-size: 0.97rem;
+}
 
 
 
