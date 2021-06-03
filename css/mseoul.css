@@ -515,12 +515,15 @@ div .roundtxt p.button::before {
     opacity: 1;
     box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
     transition: none;
-    /* border: 1px solid #623342q; */
     border-bottom: none;
     border-top: none;
-    border: 2px solid #9E2742;
+    /* border: 2px solid #9E2742; */
     height: auto;
-
+    /* border-radius: 10px; */
+    background: rgba(100,100,100,100.0.8);
+    border-top: 1.5px solid #9e2742;
+    border-bottom: 1.5px solid #9e2742;
+    border-right: none;
 }
 
 .swiper-slide.bg01{
