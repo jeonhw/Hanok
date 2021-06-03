@@ -210,6 +210,7 @@ section.section2 {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    border-bottom: 1px solid #333;
 }
 
 .header {
@@ -315,11 +316,14 @@ section .tabV .content .conBox.on {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 90%;
-    align-items: center;
+    width: 100vw;
+    /* align-items: center; */
     justify-content: center;
-    margin: auto;
+    /* margin: auto; */
+    margin: 0 auto;
+    align-items: center;
 }
+
 div.content div.roundtxt {
     width: 82%;
     display: flex;
@@ -577,4 +581,55 @@ section.section2 .tabV ul li {
     margin: 5px;
     border-radius: 2px;
     margin-bottom: 2rem;
+}
+
+section.section6 .inner div.topsec {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+section.section6 div.topsec p {
+    font-size: 1.1rem;
+    font-family: 'Noto sans KR';
+    line-height: 3rem;
+    border-bottom: 0.5px solid #666;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    /* border: 1px solid; */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+section.section6 div.news {
+    width:auto;
+}
+
+section.section6 .inner {
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+}
+
+section.section6 ul {
+    width: 180px;
+    height: 40px;
+    line-height: 30px;
+}
+
+
+section.section6 div.topsec ul li {
+    width: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Noto Serif KR';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #333;
 }
