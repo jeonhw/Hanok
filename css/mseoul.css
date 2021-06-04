@@ -29,13 +29,16 @@ header .global {
 header .global span:last-child {
     display: none;
 }
-
 header .mMenuBt {
+    height: 45px;
     display: block;
     font-size: 2rem;
     margin: 0 20px 0 0;
-}
+    background: url(../img/outline_menu_black_48dp.png) 50% 50% no-repeat;
+    width: 45px;
+    background-size: cover;
 
+}
 /* scroll에 의해 header.color로 변경 */
 header.color .mMenuBt {
     color: #666;
@@ -79,6 +82,11 @@ nav ul.gnb .mCloseBt {
     position: absolute;
     top: 20px;
     right: 23px;
+    background: url(../img/outline_close_black_24dp.png) 50% 50% no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+
 }
 
 nav ul.gnb .mCloseBt i {
@@ -773,7 +781,7 @@ section.section6 h2 {
 }
 
 
-/* 이제 이거 하면 끝~~  */
+/* 이제 이거 하고 나브 아이콘 넣으면 끝~~  */
 section.section5 {
     width: 100%;
     height: 150vh;
@@ -783,4 +791,9 @@ section.section5 {
     display: none;
 }
 
+i{
+    width: 200px;
+    height: 200px;
+    background: url(../img/outline_menu_black_48dp.png);
+}
 
