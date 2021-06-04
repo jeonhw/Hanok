@@ -46,9 +46,45 @@ $(document).ready(function () {
 
 
 
-    $(".roundstep").hover(function () {
-        $(this).toggleClass("on");
+    // $(".roundstep").hover(function () {
+    //     $(this).toggleClass("on");
+    // });
+
+    var swiper5 = new Swiper(".mySwiper.roundstep", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        // allowTouchMove: false,
+        // pagination: {
+        //     el: ".swiper-pagination.roundstep",
+        //     clickable: true,
+        // },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                allowTouchMove: true,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+                allowTouchMove: false,
+            },
+        },
     });
+
+
+
+
+
+
+
+
+
+
 
 
     //-----------------------------모바일메뉴
@@ -97,7 +133,7 @@ var swiper = new Swiper(".mySwiper.village", {
     slidesPerView: 1,
     spaceBetween: 100,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination.village",
         clickable: true,
     },
 });

@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     /* border: 1px solid pink; */
-    /* text-decoration: none; */
+    text-decoration: none;
 
 }
 
@@ -180,6 +180,10 @@ nav {
     z-index: 110;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    /* background:white; */
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+-moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
     
 }
 
@@ -732,13 +736,26 @@ header .global span:nth-child(1):after {
 }
 
 .swiper-container.mySwiper.village {
-    width: 100%;
+    width: 80%;
     /* height: 720px; */
     overflow-x: hidden;
     overflow-y: visible;
     align-items: center;
     justify-content: center;
     padding: 0;
+    position: relative;
+    z-index: 100;
+}
+
+.swiper-pagination.village::before {
+    width: 100%;
+    height: 1px;
+    content: "";
+    background: #707070;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    z-index: 10;
 }
 
 .swiper-container.mySwiper.village .swiper-slide {
@@ -755,7 +772,6 @@ header .global span:nth-child(1):after {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-
 }
 
 .swiper-container.mySwiper.village .swiper-slide img {
@@ -768,14 +784,14 @@ header .global span:nth-child(1):after {
 
 /* 지도 형 bullet 스타일 설정  */
 
-.swiper-pagination-bullet {
+.swiper-pagination.village .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
     text-align: center;
     /* line-height: 20px; */
     margin-left: 10px;
     background: #A7A7A7;
-    /* display: flex; */
+    display: flex;
     flex-direction: row;
     border-radius: 7.5px;
     /* text-align:none; */
@@ -784,14 +800,14 @@ header .global span:nth-child(1):after {
     margin: 0 5%;
 }
 
-.swiper-pagination-bullet {
+.swiper-pagination.village .swiper-pagination-bullet {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.swiper-pagination-bullet:nth-child(1)::after {
+.swiper-pagination.village .swiper-pagination-bullet:nth-child(1)::after {
     content: "북촌";
     position: absolute;
     color: black;
@@ -808,7 +824,7 @@ header .global span:nth-child(1):after {
     justify-content: center;
 }
 
-.swiper-pagination-bullet:nth-child(2)::after {
+.swiper-pagination.village .swiper-pagination-bullet:nth-child(2)::after {
     content: "경복궁 서측";
     position: absolute;
     color: black;
@@ -824,7 +840,7 @@ header .global span:nth-child(1):after {
     justify-content: center;
 }
 
-.swiper-pagination-bullet:nth-child(3)::after {
+.swiper-pagination.village .swiper-pagination-bullet:nth-child(3)::after {
     content: "인사동";
     position: absolute;
     color: black;
@@ -840,7 +856,7 @@ header .global span:nth-child(1):after {
     justify-content: center;
 }
 
-.swiper-pagination-bullet:nth-child(4)::after {
+.swiper-pagination.village .swiper-pagination-bullet:nth-child(4)::after {
     content: "운현궁";
     position: absolute;
     color: black;
@@ -856,7 +872,7 @@ header .global span:nth-child(1):after {
     justify-content: center;
 }
 
-.swiper-pagination-bullet:nth-child(5)::after {
+.swiper-pagination.village .swiper-pagination-bullet:nth-child(5)::after {
     content: "돈화문로";
     position: absolute;
     color: black;
@@ -872,7 +888,7 @@ header .global span:nth-child(1):after {
     justify-content: center;
 }
 
-.swiper-pagination-bullet:nth-child(6)::after {
+.swiper-pagination.village .swiper-pagination-bullet:nth-child(6)::after {
     content: "성북";
     position: absolute;
     color: black;
@@ -888,7 +904,7 @@ header .global span:nth-child(1):after {
     justify-content: center;
 }
 
-.swiper-pagination-bullet:nth-child(7)::after {
+.swiper-pagination.village .swiper-pagination-bullet:nth-child(7)::after {
     content: "은평";
     position: absolute;
     color: black;
@@ -904,7 +920,7 @@ header .global span:nth-child(1):after {
     justify-content: center;
 }
 
-.swiper-pagination-bullet:nth-child(8)::after {
+.swiper-pagination.village .swiper-pagination-bullet:nth-child(8)::after {
     content: "익선동";
     position: absolute;
     color: black;
@@ -920,24 +936,34 @@ header .global span:nth-child(1):after {
     justify-content: center;
 }
 
-.swiper-pagination::before {
-    width: 1900px;
+.swiper-pagination.village .swiper-pagination::before {
+    width: 100%;
     height: 1px;
     content: "";
-    background: #707070;
+    background: #1d1d1d;
     position: absolute;
     overflow: hidden;
 }
 
-.swiper-pagination-bullet-active {
+.swiper-pagination.village .swiper-pagination-bullet-active {
     color: #fff;
-    /* background: #9E2742; */
+    background: #9E2742;
     transition: all 1s;
     position: relative;
 }
 
+.swiper-pagination.village {
+    position: absolute;
+    text-align: center;
+    transition: 300ms opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 /* 집따라가기 시도 중 */
-.swiper-pagination-bullet-active::before {
+/* .swiper-pagination-bullet-active::before {
     content: "";
     background:
         url(../img/cad512dfa84d9b608fa5850547847286.png);
@@ -953,7 +979,7 @@ header .global span:nth-child(1):after {
     position: relative;
     z-index: 100;
     align-items: center;
-}
+} */
 
 /* ------------------------------------------- */
 
@@ -1340,10 +1366,20 @@ section.section4 ul li {
     display: flex;
 }
 
-div .roundstep {
-    width: 350px;
-    height: 350px;
-    border-radius: 175px;
+div.swiper-container.mySwiper.roundstep{
+    width: 100%;
+}
+
+div.swiper-wrapper.roundstep {
+    width: 100%;
+    /* display: f; */
+    align-items: center;
+    justify-content: space-between;
+}
+div.swiper-slide div.round.step {
+    width: 340px;
+    height: 340px;
+    border-radius: 170px;
     border: 1px solid white;
     align-items: center;
     text-align: center;
@@ -1353,12 +1389,14 @@ div .roundstep {
     padding: 3%;
     cursor: pointer;
     transition: all 1s;
+    color: white;
+    /* margin: 0 auto */
 }
 
 
-div .roundstep:hover{
+/* div .roundstep:hover{
     background:#69162950;
-}
+} */
 
 /* 일단 pass */
 /* div.roundstep:hover::before {

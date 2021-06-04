@@ -288,14 +288,14 @@ section.section2 .tabV ul {
 }
 
 
-/* .swiper-pagination {
+.swiper-pagination {
     display: flex;
     justify-content: center;
     position: relative;
     z-index: 100;
     align-items: center;
-    display: none;
-} */
+    /* display: none; */
+}
 
 /* roundimg 공통 설정 */
 .swiper-container.mySwiper.village .swiper-slide div.roundimg {
@@ -636,4 +636,22 @@ section.section6 div.topsec ul li {
     justify-content: center;
     cursor: pointer;
     border: 1px solid #333;
+}
+
+
+div.swiper-slide div.round.step {
+    width: 350px;
+    height: 350px;
+    border-radius: 175px;
+    border: 1px solid white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    cursor: pointer;
+    transition: all 1s;
+    color: white;
+    margin: 0 auto
 }
