@@ -56,7 +56,7 @@ $(document).ready(function () {
         // allowTouchMove: false,
         // pagination: {
         //     el: ".swiper-pagination.roundstep",
-        //     clickable: true,
+        //     clickable: tru==
         // },
         breakpoints: {
             640: {
@@ -76,8 +76,21 @@ $(document).ready(function () {
         },
     });
 
-
-
+// 유투브 영상 자동 리사이즈
+    $(window).resize(function() {
+        resizeYoutube();
+    });
+    $(function() {
+        resizeYoutube();
+    });
+    function resizeYoutube() {
+        $("iframe").each(function() {
+            if (/^https?:\/\/www.youtube.com\/embed\//g.test($(this).attr("src"))) {
+                $(this).css("width", "100%");
+                $(this).css("height", Math.ceil(parseInt($(this).css("width")) * 480 / 854) + "px");
+            }
+        });
+    }
 
 
 
@@ -211,7 +224,7 @@ $(".tabV ul li").click(function () {
 // var responsiveHeight = $videoIframe.offsetWidth * 0.5625;
 // $videoIframe.setAttribute('height', responsiveHeight);
 
-// //브라우저 리사이즈 시 iframe 높이값 비율에 맞게 세팅
+// // //브라우저 리사이즈 시 iframe 높이값 비율에 맞게 세팅
 // window.addEventListener('resize', function(){
 //     responsiveHeight = $videoIframe.offsetWidth * 0.5625;
 //     $videoIframe.setAttribute('height', responsiveHeight);

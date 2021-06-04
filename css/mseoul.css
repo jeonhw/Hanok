@@ -319,7 +319,7 @@ section.section2 .tabV ul {
 section .tabV .content .conBox.on {
     display: flex;
     flex-direction: column;
-    height: 600px;
+    height: 100%;
     width: 100vw;
     /* align-items: center; */
     justify-content: center;
@@ -622,6 +622,7 @@ section.section6 .inner {
 section.section6 ul {
     width: 180px;
     height: 40px;
+    margin-bottom: 1rem;
     line-height: 30px;
 }
 
@@ -655,3 +656,119 @@ div.swiper-slide div.round.step {
     color: white;
     margin: 0 auto
 }
+
+/* 정보 섹션 */
+
+
+section.section6 .tabV{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+
+section.section6 div.bottomsec {
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+    height: 232px;
+    margin-top: 3rem;
+}
+
+section.section6 {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    height: 90vh;
+}
+
+section.section6 .inner {
+    justify-content: space-between;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+}
+footer div.inner p {
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+footer div.inner div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+
+footer div.inner div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    flex-wrap: wrap;
+}
+
+
+footer div.inner div:nth-child(2) span:nth-child(1){
+    margin: 1rem 0;
+    text-align: center;
+    display: none;
+}
+
+
+footer div.inner div:nth-child(2) span:nth-child(2),
+footer div.inner div:nth-child(2) span:nth-child(3)
+{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+footer div.inner {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+    width: 85%;
+    padding: 1.5rem;
+}
+
+footer div.inner p::after {
+    display: none;
+}
+
+footer div.inner p{
+    padding-right: 0.4rem;
+}
+
+
+footer {
+    background: #202020;
+    width: 100%;
+    height: auto;
+    color: rgba(100, 100, 100, 0.9);
+    font-size: 1.4rem;
+    align-items: center;
+    /* line-height: initial; */
+    display: flex;
+}
+
+section.section6 .tabV .content .conBox.on {
+    text-align: left;
+    justify-content: start;
+    width: auto;
+}
+
+
+
+
+
