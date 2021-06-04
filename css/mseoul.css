@@ -772,3 +772,6 @@ section.section6 .tabV .content .conBox.on {
 
 
 
+section.section6 h2 {
+    display: none;
+}
