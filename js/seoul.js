@@ -76,23 +76,40 @@ $(document).ready(function () {
         },
     });
 
+
+
 // 유투브 영상 자동 리사이즈
-    $(window).resize(function() {
-        resizeYoutube();
-    });
-    $(function() {
-        resizeYoutube();
-    });
-    function resizeYoutube() {
-        $("iframe").each(function() {
-            if (/^https?:\/\/www.youtube.com\/embed\//g.test($(this).attr("src"))) {
-                $(this).css("width", "100%");
-                $(this).css("height", Math.ceil(parseInt($(this).css("width")) * 480 / 854) + "px");
-            }
-        });
+    // $(window).resize(function() {
+    //     resizeYoutube();
+    // });
+    // $(function() {
+    //     resizeYoutube();
+    // });
+    // function resizeYoutube() {
+    //     $("iframe").each(function() {
+    //         if (/^https?:\/\/www.youtube.com\/embed\//g.test($(this).attr("src"))) {
+    //             $(this).css("width", "100%");
+    //             $(this).css("height", Math.ceil(parseInt($(this).css("width")) * 480 / 854) + "px");
+    //         }
+    //     });
+    // }
+
+
+    function setIFrameHeight(obj){
+
+        if(obj.contentDocument){
+    
+            obj.height = obj.contentDocument.body.offsetHeight + 40;
+    
+        } else {
+    
+            obj.height = obj.contentWindow.document.body.scrollHeight;
+    
+        }
+    
     }
-
-
+    
+    
 
 
 
