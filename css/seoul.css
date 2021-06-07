@@ -744,7 +744,7 @@ header .global span:nth-child(1):after {
     justify-content: center;
     padding: 0;
     position: relative;
-    z-index: 100;
+    z-index: 1;
 }
 
 .swiper-pagination.village::before {

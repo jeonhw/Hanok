@@ -78,7 +78,7 @@ $(document).ready(function () {
 
 
 
-// 유투브 영상 자동 리사이즈
+    // 유투브 영상 자동 리사이즈
     // $(window).resize(function() {
     //     resizeYoutube();
     // });
@@ -95,21 +95,8 @@ $(document).ready(function () {
     // }
 
 
-    function setIFrameHeight(obj){
 
-        if(obj.contentDocument){
-    
-            obj.height = obj.contentDocument.body.offsetHeight + 40;
-    
-        } else {
-    
-            obj.height = obj.contentWindow.document.body.scrollHeight;
-    
-        }
-    
-    }
-    
-    
+
 
 
 
